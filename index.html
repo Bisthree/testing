@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title> Home </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <section class="Logo">
+            <h1 class="maintext"> 
+               <span class="uglee">UGLEE</span><span class="mob">MOB</span> </h1>
+                
+        </section>
+
+        <div class="pagesize"></div>
+        <header>
+            <h1 class="selection">  <span class="span">  </span></h1>
+            <nav>
+                <ul class="ul">
+                    <li class="firstli"><a href="index.html"> Home </a> </li>
+                    <li><a href="#"> About </a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <div class="loader-wrapper">
+
+        </div>
+
+       
+
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+            })   
+        </script>
+        <div class="textbox">
+            <h1> LONELINESS </h1>
+            
+            <p>“Let me tell you this: if you meet a loner, 
+                no matter what they tell you, it's not because 
+                they enjoy solitude. It's because they have tried 
+                to blend into the world before, and people continue 
+                to disappoint them.” <br><br>
+                ― Jodi Picoult, My Sister's Keeper</p>
+        </div>
+       
+
+        
+            
+        <footer>
+            <div class="footer">
+
+                <div class="audio">
+                    <audio controls autoplay loop="">
+                        <source src="sound2.mp3" type="audio/mp3">
+                    </audio>
+                    </div>
+
+                <p> © All rights reserved by UgleeMob LLC. </p>
+
+                
+
+            </div>    
+        </footer>
+<div class="video">
+
+    <video autoplay loop muted>
+        <source src="newvideo2.mp4" type="video/mp4">
+    </video>
+</div>
+
+        <script>
+            let scrollerId;
+            let paused = true;
+            let speed = 1;
+            let interval = speed * 5;
+
+            function startScroll() {
+                let id = setInterval(function(){
+                    window.scrollBy(0, 2);
+                    if (
+                        window.innerHeight + window.scrollY ==
+                        document.body.offsetHeight
+                    ) {
+                        stopScroll();
+                    }
+                }, interval);
+                return id;
+            }
+
+            function stopScroll() {
+                clearInterval(scrollerId);
+            }
+
+            document.body.addEventListener("keypress", function (event){
+              if (event.which == 13 || event.keyCode == 13){
+                  if(paused == true) {
+                      scrollerId = startScroll();
+                      paused = false;
+                  } else {
+                      stopScroll();
+                      paused = true;
+                  }
+              }  
+            })
+          
+        </script>
+
+    </body>
+</html>
+

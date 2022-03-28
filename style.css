@@ -1,0 +1,210 @@
+@font-face{
+    font-family: Gothic;
+    src: url(OldLondon.ttf);
+}
+@font-face{
+    font-family: Blacker;
+    src: url(Evogria.otf);
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color:rgba(255, 255, 255, 0);
+    background-size:cover;
+    background-attachment: scroll;
+    background-repeat:repeat;
+    background-clip:content-box;
+    width:auto;
+    top:4000px;
+    max-height:4000px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #1d1d1d;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:1;
+    
+}
+
+.selection{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: Gothic;
+    color: #ca3939;
+}
+
+.span {
+    color: #ffffff;
+}
+
+.ul{
+    width: auto;
+    float:none;
+    text-align:center;
+    margin-top: 0px;
+    position:sticky;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Gothic;
+    font-size: 30px;
+    display:flex;
+    flex-direction:row;
+    transition:1s;
+    
+    
+    
+}
+
+a:hover {
+    color: #F0c330;
+    transform:scale(1.3);
+    transition: 0.5s;
+    z-index:2;
+}
+
+
+
+.maintext{
+    text-align:center;
+    margin-top:0px;
+    font-family: Gothic;
+    color:#1d1d1d;
+    text-decoration:none;
+    font-size:120px;
+    font-weight:normal;
+    cursor:default;
+    position:relative;
+    flex-direction:row;
+    transition:0.8s;
+    animation: maintext 2s forwards;
+    animation-iteration-count: 1;
+    z-index:1;
+   
+    
+    
+}
+
+
+.mob:hover {
+    color:#ca7a39;
+    transition: 0.5s;
+    
+  
+}
+
+.uglee:hover{
+    color:#F0c330;
+    transition:0.5s;
+    
+    
+    
+}
+
+.firstli:hover{
+    color:#39ca74;
+    transition:0.5s;
+}
+
+.audio{
+    display:relative;
+    text-align:center;
+    margin-top:200px;
+    padding:20px;
+    
+}
+
+.loader-wrapper {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color:#1d1d1d;
+}
+
+@keyframes maintext {
+    100% { transform: translateY(100%);
+    }
+    0% { transform: translateY(0%)}
+}
+
+.textbox{
+    max-width: 650px;
+    position:relative;
+    display:block;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.2);
+    padding: 30px;
+    text-align:center;
+    letter-spacing:2px;
+    justify-content: center;
+    z-index:2;
+    cursor:default;
+    
+    
+}
+
+.textbox:hover {
+    background:#1d1d1d;
+    color:white;
+    
+    transition: 1s;
+}
+
+.textbox h1{
+    font-size:30px;
+    font-weight:lighter;
+    letter-spacing:10px;
+}
+
+.footer{
+    max-width: auto;
+    position:relative;
+    display:block;
+    background:#1d1d1d;
+    color:white;
+    padding:20px;
+    text-align:center;
+    letter-spacing:1px;
+    font-size:15px;
+}
+
+.video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    z-index:0;
+    filter:blur(5px);
+
+}
+
+
+
